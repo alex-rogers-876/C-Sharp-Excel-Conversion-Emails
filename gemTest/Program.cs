@@ -91,7 +91,7 @@ namespace gemTest
                             Body = Body.Replace("#DealerName#", properName);
                         Body = Body.Replace("#TodayDate#", DateTime.Now.ToString());
                         sendy.body = Body;
-                        sendy.to = "alex @tjhpayroll.com"; ; //"alex @tjhpayroll.com"; // "alextjh@yahoo.com";  // real value item.compEmail;
+                        sendy.to = "alex @tjhpayroll.com";  //"alex @tjhpayroll.com"; // "alextjh@yahoo.com";  // real value item.compEmail;
 
                         sendy.subject = "Your payroll is out for delivery";
                         sendy.SendEmailFromAccount();
