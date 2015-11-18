@@ -19,11 +19,11 @@ namespace gemTest
         static void Main(string[] args)
         {
 
-            string smtp = "alex@smtp.office365.com";
-            string activeFilePathXls = @"C:\Users\Michelle\Excel\activityreport.xls";
-            string activeFilePathXlsX = @"C:\Users\Michelle\Excel\activityreport.xlsx";
-            string emailFilePathXls = @"C:\Users\Michelle\Excel\ActEmails.xls";
-            string emailFilePathXlsX = @"C:\Users\Michelle\Excel\ActEmails.xlsx";
+            string smtp = "bogus";
+            string activeFilePathXls = @"C:\bogus\activityreport.xls";
+            string activeFilePathXlsX = @"C:\bogus\activityreport.xlsx";
+            string emailFilePathXls = @"C:\bogus\ActEmails.xls";
+            string emailFilePathXlsX = @"C:\bogus\ActEmails.xlsx";
            
 
             string fileName = "client.htm";
@@ -91,7 +91,7 @@ namespace gemTest
                             Body = Body.Replace("#DealerName#", properName);
                         Body = Body.Replace("#TodayDate#", DateTime.Now.ToString());
                         sendy.body = Body;
-                        sendy.to = "alex @tjhpayroll.com";  //"alex @tjhpayroll.com"; // "alextjh@yahoo.com";  // real value item.compEmail;
+                        sendy.to = item.compEmail;  
 
                         sendy.subject = "Your payroll is out for delivery";
                         sendy.SendEmailFromAccount();
