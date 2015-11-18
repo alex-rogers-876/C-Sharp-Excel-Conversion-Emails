@@ -8,9 +8,9 @@ namespace gemTest
 {
     class MaillConst
     {
-        public static string Username = "alex@tjhpayroll.com";
-        public static string Password = "3lvis@yr0ll5!ck";
-        public const string SmtpServer = "smtp.office365.com";
-        public const string From = "alex@tjhpayroll.com";
+        public static string Username = "blah"; // bogus value for git
+        public static string Password = "blah";// bogus value for git
+        public const string SmtpServer = "blah";// bogus value for git
+        public const string From = "blah;// bogus value for git
     }
 }
